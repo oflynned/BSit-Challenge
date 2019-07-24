@@ -31,7 +31,7 @@ $ info: api.bin.www#onListening: listening on port 3001
 
 To run the React web-app:
 ```
-$ npm i
+$ cd ui && npm i
 $ npm run start
 ```
 
