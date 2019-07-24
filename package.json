@@ -49,6 +49,7 @@
     "dotenv": "latest",
     "express": "~4.16.1",
     "heroku-ssl-redirect": "0.0.4",
+    "http-errors": "^1.7.3",
     "joi": "^14.3.1",
     "mongodb": "latest",
     "monk": "^6.0.6",
