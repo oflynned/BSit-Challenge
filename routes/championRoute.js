@@ -4,8 +4,12 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const champions = await findWithPagination(req);
-  res.status(200).json(champions);
+  try {
+    const champions = await findWithPagination(req);
+    res.status(200).json(champions);
+  } catch ({ message }) {
+    res.status(400).json({ error: message });
+  }
 });
 
 router.get("/:championId", async (req, res) => {
@@ -16,10 +20,10 @@ router.get("/:championId", async (req, res) => {
     switch (message) {
       default:
       case "bad_request":
-        res.status(400).send({ error: message });
+        res.status(400).json({ error: message });
         break;
       case "champion_not_found":
-        res.status(404).send({ error: message });
+        res.status(404).json({ error: message });
         break;
     }
   }
