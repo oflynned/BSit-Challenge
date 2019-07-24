@@ -1,5 +1,12 @@
 # League of Legends Champion React Web-App
 
+## Stack
+
+- ES6 Javascript standard
+- Node.js w/ Express.js framework
+- MongoDB w/ Monk.js driver
+- React.js
+
 ## Setup
 
 ### Local
@@ -33,7 +40,7 @@ A development window will open in your browser.
 ### Production
 A compiled production web-app is available at https://bsit-champions.herokuapp.com.
 
-### API Endpoints
+## API Endpoints
 - GET `/api/champions/`
     - Takes option parameters `limit` and `offset` as query parameters. `limit` defaults to 10, `offset` defaults to 0. Sending a value < 1 for limit returns all results.
     - Returns a JSON array of champions ordered A-Z
