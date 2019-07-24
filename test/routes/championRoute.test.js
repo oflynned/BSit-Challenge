@@ -60,30 +60,31 @@ describe(`${url} endpoint`, () => {
         });
       });
     });
-  });
-});
-describe("/:championId", () => {
-  describe("should return 200", () => {
-    test("when accessing an existing champion", async done => {
-      const { body, status } = await getResource(app, url + "/" + championId);
-      expect(status).toEqual(200);
-      expect(Array.isArray(body)).toBe(false);
-      expect(body.hasOwnProperty("name")).toBe(true);
-      expect(body.id).toEqual(championId);
-      done();
-    });
-  });
 
-  describe("should return 404", () => {
-    test("when accessing a non-existent champion", async done => {
-      try {
-        await getResource(app, url + "/does-not-exist");
-        done("did not throw http 404");
-      } catch ({ response }) {
-        expect(response.status).toEqual(404);
-        expect(response.body.error).toEqual("champion_not_found");
-        done();
-      }
+    describe("/:championId", () => {
+      describe("should return 200", () => {
+        test("when accessing an existing champion", async done => {
+          const { body, status } = await getResource(app, url + "/" + championId);
+          expect(status).toEqual(200);
+          expect(Array.isArray(body)).toBe(false);
+          expect(body.hasOwnProperty("name")).toBe(true);
+          expect(body.id).toEqual(championId);
+          done();
+        });
+      });
+
+      describe("should return 404", () => {
+        test("when accessing a non-existent champion", async done => {
+          try {
+            await getResource(app, url + "/does-not-exist");
+            done("did not throw http 404");
+          } catch ({ response }) {
+            expect(response.status).toEqual(404);
+            expect(response.body.error).toEqual("champion_not_found");
+            done();
+          }
+        });
+      });
     });
   });
 });
