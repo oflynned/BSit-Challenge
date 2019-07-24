@@ -17,7 +17,7 @@ app.options("*", cors());
 
 app.use(sslRedirect());
 
-const championsRoute = require("./routes/champions");
+const championsRoute = require("./routes/championRoute");
 
 app.use("/api/champions", championsRoute);
 
