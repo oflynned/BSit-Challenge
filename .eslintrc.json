@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "extends": "standard",
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "node": true,
+    "jest": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "semi": [
+      1,
+      "always"
+    ],
+    "no-tabs": 0,
+    "quotes": [
+      2,
+      "double"
+    ]
+  }
+}
