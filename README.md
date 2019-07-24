@@ -10,7 +10,7 @@
 ## Setup
 
 ### Local
-I suggest creating a .env file with the following in the root directory if you wish to run another environment or specify your own DB URI:
+I suggest creating a .env file with the following in the root directory if you wish to run another environment or specify your own DB URL:
 ```
 ENVIRONMENT="development"
 MONG0DB_URL="..."
