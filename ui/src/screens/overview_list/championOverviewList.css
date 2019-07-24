@@ -1,0 +1,31 @@
+.overview {
+    padding: 16px 0;
+    margin: 0 auto;
+    width: 1024px;
+    height: 100%;
+}
+
+.overview > .heading {
+    margin: 32px 16px;
+}
+
+.overview ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.overview ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.overview p {
+    text-align: justify;
+}
+
+.overview .card:hover {
+    margin: -1px; /*counteract the border introduced by hovering*/
+    box-shadow: #EA0232 0 0 4px;
+    border: 1px solid #EA0232;
+}

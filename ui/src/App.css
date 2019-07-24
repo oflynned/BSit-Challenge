@@ -1,0 +1,15 @@
+.App {
+    min-height: 100vh;
+}
+
+.heading {
+    font-family: 'MedievalSharp', sans-serif;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.action:hover {
+    cursor: pointer;
+}

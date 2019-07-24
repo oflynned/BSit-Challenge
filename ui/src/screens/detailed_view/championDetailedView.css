@@ -1,0 +1,33 @@
+.detailed-view {
+    padding: 32px 0;
+    margin: 0 auto;
+    width: 1024px;
+    height: 100%;
+}
+
+.detailed-view > .heading {
+    margin: 32px;
+}
+
+.detailed-view img {
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 24px auto;
+}
+
+.detailed-view p, .detailed-view span {
+    text-align: justify;
+}
+
+.detailed-view table {
+    margin: 32px auto;
+    text-align: center;
+}
+
+.detailed-view table td, .detailed-view table th {
+    padding: 8px 32px;
+}
+
+.detailed-view h3:hover {
+    color: #EA0232;
+}

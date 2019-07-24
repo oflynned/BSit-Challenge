@@ -1,0 +1,13 @@
+.card {
+    padding: 16px;
+}
+
+.card img {
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+}
+
+.card .card-heading {
+    position: relative;
+}
