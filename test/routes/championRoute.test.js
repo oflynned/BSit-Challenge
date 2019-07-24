@@ -13,7 +13,7 @@ describe(`${url} endpoint`, () => {
   beforeAll(async () => {
     await dropDb();
     await seedChampions();
-    app = require("../../app");
+    app = require("../../app")();
     chai.use(chaiHttp);
   });
 
