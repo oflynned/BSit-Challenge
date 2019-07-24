@@ -5,7 +5,6 @@ const logger = require("../config/winston");
 const namespace = "api.seeds.seedChampions";
 
 export const seedChampions = async () => {
-  await Champion.destroyMany({}, "seedChampions");
   const champions = await Champion.find();
   if (champions.length > 0) {
     logger.info(`${namespace}: champion list has already been seeded`);
