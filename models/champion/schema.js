@@ -8,7 +8,7 @@ const schema = Joi.object().keys({
   key: Joi.string().required(),
   name: Joi.string().required(),
   title: Joi.string().required(),
-  tags: Joi.array().items(Joi.string().required()).required(),
+  tags: Joi.array().items(Joi.string().required()).min(1).required(),
   stats: StatsSchema,
   icon: Joi.string().uri().required(),
   sprite: SpriteSchema,
