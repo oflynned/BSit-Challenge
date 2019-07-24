@@ -7,7 +7,7 @@
     "lint": "eslint --ignore-path .eslintignore . --fix",
     "lint:staged": "lint-staged",
     "sort-package-json": "sort-package-json",
-    "start": "node bin/www.js",
+    "start": "node bin/www",
     "test": "NODE_ENV=test ENVIRONMENT=test jest --runInBand --forceExit"
   },
   "lint-staged": {
