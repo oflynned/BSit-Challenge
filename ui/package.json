@@ -13,7 +13,6 @@
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.3.1",
     "eslint-plugin-react": "^7.11.1",
-    "glamor": "^2.20.40",
     "identity-obj-proxy": "^3.0.0",
     "is-empty": "^1.2.0",
     "isomorphic-fetch": "^2.2.1",
@@ -28,7 +27,8 @@
     "react-scripts": "3.0.1",
     "react-toastify": "^5.3.2",
     "superagent": "^5.1.0",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "webpack": "^4.37.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -50,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.0"
   }
 }
