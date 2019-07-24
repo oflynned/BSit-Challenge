@@ -1,0 +1,54 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.3.1",
+    "eslint-plugin-react": "^7.11.1",
+    "glamor": "^2.20.40",
+    "identity-obj-proxy": "^3.0.0",
+    "is-empty": "^1.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "lodash.debounce": "^4.0.8",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.8.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loading-screen": "0.0.17",
+    "react-scripts": "3.0.1",
+    "react-toastify": "^5.3.2",
+    "superagent": "^5.1.0",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
